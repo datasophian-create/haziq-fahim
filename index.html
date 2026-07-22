@@ -1,30 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="ms">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigator App</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 
-    <link rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<title>Navigator Sekolah</title>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<h2>📍 Aplikasi Navigator</h2>
+<h1>Navigator Sekolah</h1>
 
-<button onclick="getLocation()">Cari Lokasi Saya</button>
+<p>Pilih destinasi:</p>
 
-<div id="info"></div>
+<select id="lokasi">
 
-<div id="map"></div>
+<option value="">-- Pilih --</option>
+
+<option value="kantin">Kantin</option>
+
+<option value="kesihatan">Bilik Kesihatan</option>
+
+<option value="ict">Bilik ICT</option>
+
+</select>
+
+<button onclick="paparLokasi()">
+
+Cari
+
+</button>
+
+<br><br>
+
+<img id="gambar" width="800">
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
